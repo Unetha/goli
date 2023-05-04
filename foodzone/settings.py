@@ -11,9 +11,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'template')
 SECRET_KEY = 'django-insecure-+06=x1aer^924_h5a5+l0sr)fb8p-9xd+#ctxqib1bi^ztu5dw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://goli.azurewebsites.net/','']
+ALLOWED_HOSTS = ['https://goli.azurewebsites.net','localhost']
 
 
 # Application definition
