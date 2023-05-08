@@ -172,9 +172,9 @@ def single_dish(request, id):
             'item_name':dish.name,
             'user_id':request.user.id,
             'invoice':inv,
-            'notify_url':'http://{}{}'.format(settings.HOST,reverse('paypal-ipn')),
-            'return_url':'http://{}{}'.format(settings.HOST,reverse('payment_done')),
-            'cancel_url':'http://{}{}'.format(settings.HOST,reverse('payment_cancel')),
+            'notify_url':'http://{}{}'.format(settings.HOSTS,reverse('paypal-ipn')),
+            'return_url':'http://{}{}'.format(settings.HOSTS,reverse('payment_done')),
+            'cancel_url':'http://{}{}'.format(settings.HOSTS,reverse('payment_cancel')),
         }
 
         order.invoice_id = inv 
